@@ -1,7 +1,7 @@
 # 🐧 Linux Lab 1 Bootstrap Automation (user_data.sh) — Part 2 (Testing + Debugging)
 
 > **Bear in mind:** this lab is split into two parts.
-> **Part 1** was the code walkthrough (explaining the script).
+> [Part 1](https://github.com/1suleyman/-Linux-Users-Groups-Bootstrap-Automation-Lab-user_data.sh-Part-1-Code-Walkthrough-) was the code walkthrough (explaining the script).
 > **Part 2 (this README)** is the **real test on EC2**, including debugging why it failed, fixing it, and validating the results.
 
 In this lab, I wired my `user_data.sh` into Terraform, launched an EC2 instance, then validated whether cloud-init actually executed my bootstrap. It **failed first**, and I debugged it end-to-end using cloud-init logs, environment reproduction (`env -i`), and script inspection. After two key fixes, it **worked successfully**.
